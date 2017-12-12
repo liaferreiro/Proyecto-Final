@@ -1,0 +1,583 @@
+/*
+font-family: 'Arvo', serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+/* azul marino: #00395e
+   amarillo : #feba1c
+   */
+
+.logo img{
+  width: 20%;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 10%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+  z-index: 50;
+
+}
+
+
+/*DROPDOWN*/
+.dropbtn {
+    background-color:transparent;
+    color: white;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0%;
+
+
+
+}
+
+.dropbtn:hover { color: white;
+
+}
+
+
+.dropdown {
+  display: block;
+  text-align: right;
+  z-index: 3;
+ }
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 90%;
+
+}
+
+
+.dropdown-content a {
+    color: white;
+    background-color: #00395e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    border-bottom: 1px solid #001f33;
+
+}
+
+.dropdown-content a:hover {color: #feba1c;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+   z-index: 100;
+
+}
+
+
+.dropdown:hover .dropbtn {
+    color: white;
+    background-color:#232323;
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+.dropdown{
+
+    z-index: 3;
+
+    }
+  }
+/* FINAL DROPDOWN*/
+
+.idioma {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  z-index: 5;
+  top:2%;
+  left: 1%;
+  font-size: 1.2em;
+}
+
+
+
+select:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+.jumbotron{
+    background-color: white;
+    margin-bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.info1 h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 3.5em;
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+
+}
+
+.slide {
+  margin-top: -4%;
+}
+
+
+/*FORMULARIO*/
+/* The Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    margin-left: 25%;
+    z-index:100;
+
+}
+
+.form-control {
+  width: 25%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+}
+
+
+#myBtn {
+    background-color: #feba1c;
+    border-color: #feba1c;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    text-align: center;
+    position: absolute;
+  top: 65%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+    position: absolute;
+    padding: 1%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3em;
+}
+
+#myBtn:hover {
+    background-color: #e4a001;
+    border-color: #e4a001;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'Arvo', serif;
+
+}
+
+.modal-content p{
+    text-align: center;
+    margin-top: 2%;
+
+}
+
+
+.btn-info {
+  background-color: #feba1c !important;
+  display: block;
+  width: 25%;
+  padding: 3%;
+  border-radius: 3px;
+  border: 1px solid #feba1c !important;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  margin: 0 auto;
+}
+
+
+
+.btn-info:hover{
+    background-color: #e4a001;
+    color: white;
+    text-decoration: none;
+}
+
+#myModal{
+  overflow: scroll
+}
+
+#myModal::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+/*Fecha*/
+  .p-modal {
+    text-align: left !important;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .select-date {
+    display: flex;
+  }
+
+  .select-p {
+    margin-right: 1em;
+  }
+
+  .hora-p {
+    margin-right: 0;
+  }
+
+  .selections {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .selections select {
+    margin-left: 1em;
+  }
+
+  .cantidad-personas {
+    display: flex;
+    align-items: center;
+  }
+
+  .cantidad-personas .p-modal {
+    margin-right: 1em;
+  }
+
+  .presupuesto-range {
+  }
+
+  .range-slider-container {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+  }
+  #range-value-bar {
+    width: 100%;
+    content:"0";
+    background-color: #e4a001;
+    position: absolute;
+    z-index: 10000;
+    height: 10px;
+    top: 0;
+    margin: 0;
+  }
+  #range-value {
+    display: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: grey;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.08);
+    border: 1px solid #FFF;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background: #e4a001;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -8px;
+    position: relative;
+    z-index: 1000000000;
+  }
+
+  .presupuesto-money {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .actividades-sliders {
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .p-actividades {
+    text-align: left !important;
+    margin-bottom: 5px;
+  }
+
+  .actividades-sliders .range-slider-container {
+    margin-right: 50%;
+  }
+
+  .actividades-sliders #range-value-bar {
+    height: 4px;
+  }
+
+  .actividades-sliders input[type=range]::-webkit-slider-runnable-track {
+    height: 0;
+  }
+
+  .actividades-sliders input[type=range]::-webkit-slider-thumb {
+    margin-top: -10px;
+    height: 15px;
+    width: 15px;
+  }
+
+
+.row3 {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.row3 p {
+  font-size: 1em;
+  margin: 0 auto;
+  display: block;
+  padding-bottom: 1%;
+}
+
+.row3 .menos {
+  border: 1px solid blue;
+}
+
+.row3 .mas {
+  border: 1px solid blue;
+}
+
+.linea {
+border: 1px solid red;
+}
+
+/*FINAL range selector*/
+
+
+
+
+
+
+
+/*FINAL FORMULARIO*/
+
+
+.container {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+
+/* AQUI EMPIEZA EL SOBRE NOSOTROS*/
+
+.row h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color:#00395e;
+  padding-bottom: 3%;
+  padding-top: 10%;
+  font-size: 3em;
+
+}
+
+.row p {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  width: 50%;
+  font-size: 1.5em;
+  display: block;
+  margin: 0 auto;
+  color:#00395e;
+  padding-bottom: 3%;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#00395e;
+  font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.iconos {
+  width: 20%;
+  padding-bottom: 5%;
+  padding-top: 10%;
+}
+
+/* AQUI EMPIEZA EL SOBRE NOSOTROS*/
+
+
+/* AQUI COMIENZA EL FOOTER */
+
+footer {
+  background-color: #00395e;
+  height: 30%;
+
+}
+
+
+/*botones*/
+
+.botones {
+  display: block;
+  text-align: center;
+  padding-top: 1.5%;
+  font-size: 2em;
+  width: 100%;
+}
+
+.fa  {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 1.5%;
+  font-size: 70px;
+  text-align: center !important;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.botones .fa:hover {
+  text-decoration: none;
+  color: #fdba1d;
+}
+
+.fa-facebook {
+  color: white;
+
+}
+
+.fa-twitter {
+  color: white;
+
+}
+
+
+.fa-youtube {
+  color: white;
+
+}
+
+.fa-instagram {
+  color: white;
+
+}
+
+/* fin botones*/
+
+.final {
+  width: 100%;
+}
+
+
+.row2 {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.row2 p {
+  color: white;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+
+
+}
+
+.col-md-2 p {
+  padding-bottom: 3%;
+}
+
+
+.row2 p:hover {
+  color:#feba1c;
+
+}
+
+.row2 img{
+  width: 40%;
+  padding-top: 15%;
+
+}
+
+
+.footer {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 1em;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}

@@ -1,0 +1,278 @@
+/*
+font-family: 'Arvo', serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+/* azul marino: #00395e
+   amarillo : #feba1c
+   */
+
+.logo img{
+  width: 20%;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 10%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+  z-index: 50;
+  
+}
+
+
+/*DROPDOWN*/
+.dropbtn {
+    background-color:transparent;
+    color: white;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0%;
+    
+
+  
+}
+
+.dropbtn:hover { color: white;
+
+}
+
+
+.dropdown {
+  display: block;
+  text-align: right;
+  z-index: 100;
+ }
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 90%;
+
+}
+
+
+.dropdown-content a {
+    color: white;
+    background-color: #00395e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    border-bottom: 1px solid #001f33;
+  
+}
+
+.dropdown-content a:hover {color: #feba1c;}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+   z-index: 100;
+
+}
+
+
+.dropdown:hover .dropbtn {
+    color: white;
+    background-color:#232323;
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+.dropdown{
+
+    z-index: 3;
+
+    }
+  }
+/* FINAL DROPDOWN*/
+
+.idioma {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  z-index: 5;
+  top:2%;
+  left: 1%;
+  font-size: 1.2em;
+}
+
+
+
+select:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+.jumbotron{
+    background-image: url(../images/fondociudad.png);
+    height: 100vh;
+    margin-bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.info{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  font-size: 3.5em;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  
+}
+
+.texto {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1em;
+  width: 50%;
+  color: white;
+  font-weight: 300;
+  display: block;
+  margin: 0 auto;
+}
+
+.row p {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  width: 50%;
+  font-size: 1.5em;
+  display: block;
+  margin: 0 auto;
+  color:#00395e;
+  padding-bottom: 3%;
+}
+
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:#00395e;
+  font-family: 'Josefin Sans', sans-serif;
+  
+
+}
+
+
+/* AQUI COMIENZA EL FOOTER */
+
+footer {
+  background-color: #00395e;
+  height: 30%;
+}
+
+
+/*botones*/
+
+.botones {
+  display: block;
+  text-align: center;
+  padding-top: 1.5%;
+  font-size: 2em;
+  width: 100%;
+}
+
+.fa  {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 1.5%;
+  font-size: 70px;
+  text-align: center !important;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.botones .fa:hover {
+  text-decoration: none;
+  color: #fdba1d;
+}
+
+.fa-facebook {
+  color: white;
+  
+}
+
+.fa-twitter {
+  color: white;
+  
+}
+
+
+.fa-youtube {
+  color: white;
+  
+}
+
+.fa-instagram {
+  color: white;
+  
+}
+
+/* fin botones*/
+
+.final {
+  width: 100%;
+}
+
+
+.row2 {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.row2 p {
+  color: white;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+
+
+}
+
+.col-md-2 p {
+  padding-bottom: 3%;
+}
+
+
+.row2 p:hover {
+  color:#feba1c;
+  
+}
+
+.row2 img{
+  width: 40%;
+  padding-top: 15%;
+
+}
+
+
+.footer {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 1em;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}

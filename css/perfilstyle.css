@@ -1,0 +1,321 @@
+/*
+font-family: 'Arvo', serif;
+font-family: 'Josefin Sans', sans-serif;
+*/
+
+/* azul marino: #00395e
+   amarillo : #feba1c
+   */
+
+.logo img{
+  width: 20%;
+  margin: auto;
+  display: block;
+  position: absolute;
+  top: 10%;  /* position the top  edge of the element at the middle of the parent */
+  left: 50%; /* position the left edge of the element at the middle of the parent */
+  transform: translate(-50%, -50%); /* This is a shorthand of translateX(-50%) and translateY(-50%) */
+  z-index: 50;
+  
+}
+
+.color {
+  background-color: #00395e;
+  width: 100%;
+  height: 20%;
+}
+
+
+/*DROPDOWN*/
+.dropbtn {
+    background-color:transparent;
+    color: white;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0%;
+    
+
+  
+}
+
+.dropbtn:hover { color: white;
+
+}
+
+
+.dropdown {
+  display: block;
+  text-align: right;
+  z-index: 3;
+ }
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-left: 90%;
+
+}
+
+
+.dropdown-content a {
+    color: white;
+    background-color: #00395e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    border-bottom: 1px solid #001f33;
+  
+}
+
+.dropdown-content a:hover {color: #feba1c;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+   z-index: 100;
+
+}
+
+
+.dropdown:hover .dropbtn {
+    color: white;
+    background-color:#232323;
+
+}
+
+
+
+@media only screen and (max-width: 900px) {
+.dropdown{
+
+    z-index: 3;
+
+    }
+  }
+/* FINAL DROPDOWN*/
+
+.idioma {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  position: absolute;
+  z-index: 5;
+  top:2%;
+  left: 1%;
+  font-size: 1.2em;
+}
+
+
+
+select:focus{
+  text-decoration: none;
+  outline: none;
+}
+
+
+
+.jumbotron{
+    background-color: white;
+    height: 100vh;
+    margin-bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.perfil{
+  background-color: #feba1c;
+  width: 20%;
+  height: 60%;
+  margin-top: 5%;
+  margin-left: 3%;
+}
+
+
+.perfil img {
+  width: 50%;
+display: block;
+border-radius: 100%;
+margin: auto;
+padding-top: 25%;
+}
+
+.name {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #00395e;
+  font-size: 1.7em;
+  text-align: center;
+  padding-top: 3%;
+
+}
+
+.user {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #00395e;
+  font-weight: 300;
+  font-size: 1.1em;
+  text-align: center;
+  margin-top: -9%;
+}
+
+.profile {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #00395e;
+  color: white;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.profile:hover {
+  color: #feba1c;
+}
+
+.rutas img{
+  width: 15%;
+  display: inline block;
+  margin-top: -35%;
+  
+}
+
+.foto1 {
+  margin-left: 40%;
+  margin-right: 3%;
+
+}
+
+.btn-info {
+  background-color:#00395e;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.2em;
+  color:white;
+  border-color: #00395e;
+  margin-top: -10%;
+  margin-left: -33%;
+}
+
+.btn-info:hover {
+  background-color:#00395e;
+  border-color: #00395e;
+  color: #feba1c;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    color:#00395e;
+    position: absolute;
+    margin-top: -29%;
+    margin-left: 39%;
+}
+/* AQUI COMIENZA EL FOOTER */
+
+footer {
+  background-color: #00395e;
+  height: 30%;
+
+}
+
+
+/*botones*/
+
+.botones {
+  display: block;
+  text-align: center;
+  padding-top: 1.5%;
+  font-size: 2em;
+  width: 100%;
+}
+
+.fa  {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 1.5%;
+  font-size: 70px;
+  text-align: center !important;
+  text-decoration: none;
+  margin: 5px 2px;
+
+}
+
+.botones .fa:hover {
+  text-decoration: none;
+  color: #fdba1d;
+}
+
+.fa-facebook {
+  color: white;
+  
+}
+
+.fa-twitter {
+  color: white;
+  
+}
+
+
+.fa-youtube {
+  color: white;
+  
+}
+
+.fa-instagram {
+  color: white;
+  
+}
+
+/* fin botones*/
+
+.final {
+  width: 100%;
+}
+
+
+.row2 {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.row2 p {
+  color: white;
+  text-align: left;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  font-size: 1em;
+
+
+}
+
+.col-md-2 p {
+  padding-bottom: 3%;
+}
+
+
+.row2 p:hover {
+  color:#feba1c;
+  
+}
+
+.row2 img{
+  width: 40%;
+  padding-top: 15%;
+
+}
+
+
+.footer {
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 1em;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
